@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard | SchoolPay</title><link rel="stylesheet" href="css/style.css"></head><body>
+<aside class="sidebar"><div class="brand"><span class="brand-mark small">SP</span><span>SchoolPay<small>FEE MANAGEMENT</small></span></div><nav>
+<a href="dashboard.html" data-page="dashboard">▦ <span>Dashboard</span></a>
+<a href="students.html" data-page="students">♙ <span>Students</span></a>
+<a href="fees.html" data-page="fees">▤ <span>Fee Details</span></a>
+<a href="payments.html" data-page="payments">↗ <span>Payments</span></a>
+<a href="reports.html" data-page="reports">▥ <span>Reports</span></a>
+</nav><div class="side-bottom"><span class="avatar">A</span><span>Administrator<small>School Admin</small></span><button id="logout" title="Sign out">↪</button></div></aside><main class="main"><header class="topbar"><div><p class="eyebrow">SCHOOL FEE MANAGEMENT</p><h1>Dashboard</h1><p class="muted">Overview of student fees and collections</p></div><div class="top-actions"><span class="today" id="today"></span><span class="avatar">A</span></div></header>
+<section class="stats-grid">
+<article class="stat-card"><span class="stat-icon blue">♙</span><p>Total Students</p><strong id="totalStudents">—</strong><small>Registered students</small></article>
+<article class="stat-card"><span class="stat-icon green">₹</span><p>Collected Fees</p><strong id="collectedFees">—</strong><small>Total payments received</small></article>
+<article class="stat-card"><span class="stat-icon orange">◷</span><p>Pending Fees</p><strong id="pendingFees">—</strong><small>Amount yet to be collected</small></article></section>
+<section class="panel"><div class="panel-head"><div><h2>Recent payments</h2><p class="muted">Latest fee transactions</p></div><a class="text-link" href="payments.html">View all →</a></div><div class="table-wrap"><table><thead><tr><th>Student</th><th>Fee type</th><th>Payment date</th><th>Receipt</th><th>Amount</th></tr></thead><tbody id="recentRows"><tr><td colspan="5">Loading...</td></tr></tbody></table></div></section><div id="toast" class="toast"></div></main><script src="js/common.js"></script><script src="js/dashboard.js"></script></body></html>

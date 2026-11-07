@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Login | SchoolPay</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="login-page"><main class="login-card"><div class="brand-mark">SP</div><p class="eyebrow">SCHOOL MANAGEMENT</p><h1>Welcome back</h1><p class="muted">Sign in to manage school fee records.</p>
+<form id="loginForm"><label>Email address<input type="email" id="email" value="admin@school.com" required></label><label>Password<input type="password" id="password" value="admin123" required></label><button class="btn primary full" type="submit">Sign in</button><p class="hint">Demo login: admin@school.com / admin123</p><p id="loginError" class="error"></p></form></main><script>
+document.getElementById('loginForm').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('email').value;const pass=document.getElementById('password').value;if(email==='admin@school.com'&&pass==='admin123'){sessionStorage.setItem('schoolAdmin','yes');location.href='dashboard.html'}else{document.getElementById('loginError').textContent='Invalid demo login details.'}});
+</script></body></html>
